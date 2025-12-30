@@ -1,0 +1,13 @@
+{
+   "name": "Solstice Symphony Orchestra",
+   "shortName": "Solstice",
+   "logoUrl": "solstice.webp",
+   "theme": {
+      "primary": "#FFB024",
+      "secondary": "#171A39",
+      "ink": "#2B2B2B",
+      "background": "#FCF8EF",
+      "onPrimary": "#171A39",
+      "onSecondary": "#FCF8EF"
+   }
+}

@@ -1,0 +1,75 @@
+{
+   "label": "2025 Summer Festival (\"Treason & Triumph\")",
+   "defaultDescription": "Volunteer service supporting a community orchestra rehearsal/performance.",
+   "cycleDate": "2025-08-16",
+   "events": [
+      { "label": "Rehearsal #1", "date": "2025-07-10", "start": "7:15pm", "stop": "9:45pm", "breakTime": 10 },
+      {
+         "label": "Rehearsal #2a (Wind/Brass/Percussion Sectional)",
+         "date": "2025-07-28",
+         "start": "7:30pm",
+         "stop": "9:45pm",
+         "breakTime": 10
+      },
+      {
+         "label": "Rehearsal #2b (String Sectional)",
+         "date": "2025-07-29",
+         "start": "7:30pm",
+         "stop": "9:45pm",
+         "breakTime": 10
+      },
+      { "label": "Rehearsal #3", "date": "2025-07-31", "start": "7:30pm", "stop": "9:50pm", "breakTime": 10 },
+      { "label": "Rehearsal #4", "date": "2025-08-05", "start": "7:30pm", "stop": "9:50pm", "breakTime": 10 },
+      { "label": "Rehearsal #5", "date": "2025-08-07", "start": "7:30pm", "stop": "9:50pm", "breakTime": 10 },
+      {
+         "label": "Stage SETUP #1",
+         "date": "2025-08-11",
+         "start": "6:15pm",
+         "stop": "7:15pm",
+         "breakTime": 0
+      },
+      {
+         "label": "Rehearsal #6 (Sound Check)",
+         "date": "2025-08-11",
+         "start": "7:15pm",
+         "stop": "7:45pm",
+         "breakTime": 10
+      },
+      {
+         "label": "Rehearsal #7 (Dress)",
+         "date": "2025-08-13",
+         "start": "7:15pm",
+         "stop": "10:00pm",
+         "breakTime": 10
+      },
+      {
+         "label": "Stage BREAKDOWN",
+         "date": "2025-08-13",
+         "start": "10:00pm",
+         "stop": "10:30pm",
+         "breakTime": 0
+      },
+      { "label": "Rehearsal #8 (Notes)", "date": "2025-08-15", "start": "7:30pm", "stop": "9:30pm", "breakTime": 10 },
+      {
+         "label": "Stage SETUP #2 / Concert SETUP",
+         "date": "2025-08-16",
+         "start": "5:00pm",
+         "stop": "6:45pm",
+         "breakTime": 0
+      },
+      {
+         "label": "Concert",
+         "date": "2025-08-16",
+         "start": "6:45pm",
+         "stop": "9:30pm",
+         "breakTime": 30
+      },
+      {
+         "label": "Concert BREAKDOWN",
+         "date": "2025-08-16",
+         "start": "9:30pm",
+         "stop": "10:00pm",
+         "breakTime": 0
+      }
+   ]
+}
