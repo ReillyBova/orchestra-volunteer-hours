@@ -210,7 +210,7 @@ export const OldApp = () => {
 
 export const App = () => {
    return (
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.BASE_URL}>
          <EnsembleProvider>
             <AppRoutes />
          </EnsembleProvider>

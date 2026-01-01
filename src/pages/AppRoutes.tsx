@@ -1,4 +1,4 @@
-import { Navigate, Route, Routes } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 
 import { useEnsembleContext } from '../ensembleProvider/EnsembleContext';
 import { EnsembleSelectionPage } from './EnsembleSelectionPage/EnsembleSelectionPage';
@@ -11,8 +11,7 @@ export const AppRoutes = () => {
 
    return (
       <Routes>
-         <Route path="/" element={isEnsembleSelected ? <VolunteerHoursPage /> : <EnsembleSelectionPage />} />
-         <Route path="*" element={<Navigate to="/" replace />} />
+         <Route path="*" element={isEnsembleSelected ? <VolunteerHoursPage /> : <EnsembleSelectionPage />} />
       </Routes>
    );
 };
