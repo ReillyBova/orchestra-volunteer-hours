@@ -56,6 +56,7 @@ export const makeMuiTheme = (brand = DEFAULT_BRAND) => {
          },
          MuiButton: {
             defaultProps: { disableElevation: true },
+            styleOverrides: { root: { fontWeight: 700 } },
          },
          MuiTextField: {
             defaultProps: { size: 'small' },
@@ -68,6 +69,21 @@ export const makeMuiTheme = (brand = DEFAULT_BRAND) => {
                root: {
                   backgroundColor: alpha(ink, 0.02),
                },
+            },
+         },
+         MuiOutlinedInput: {
+            styleOverrides: {
+               notchedOutline: {
+                  padding: '0 14px', // <fieldset class="MuiOutlinedInput-notchedOutline" />
+               },
+            },
+         },
+         MuiInputLabel: {
+            styleOverrides: {
+               root: ({ theme }) => ({
+                  paddingInline: theme.spacing(0.75),
+                  borderRadius: theme.shape.borderRadius,
+               }),
             },
          },
       },

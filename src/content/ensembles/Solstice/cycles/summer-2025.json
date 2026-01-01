@@ -1,6 +1,7 @@
 {
    "label": "2025 Summer Festival (\"Treason & Triumph\")",
-   "defaultDescription": "Volunteer service supporting a community orchestra rehearsal/performance.",
+   "memo": "Summer 2025 community concert",
+   "defaultDescription": "Volunteer service supporting a community orchestra rehearsal/performance cycle",
    "cycleDate": "2025-08-16",
    "events": [
       { "label": "Rehearsal #1", "date": "2025-07-10", "start": "7:15pm", "stop": "9:45pm", "breakTime": 10 },
@@ -32,7 +33,7 @@
          "label": "Rehearsal #6 (Sound Check)",
          "date": "2025-08-11",
          "start": "7:15pm",
-         "stop": "7:45pm",
+         "stop": "9:45pm",
          "breakTime": 10
       },
       {

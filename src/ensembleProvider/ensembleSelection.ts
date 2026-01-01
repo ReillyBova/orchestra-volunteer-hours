@@ -14,7 +14,9 @@ export const readSelectionFromQuery = (): EnsembleSelection | undefined => {
    return { ensembleId, cycleId: cycleId || undefined };
 };
 
-export const writeSelectionToQuery = (next?: EnsembleSelection) => {
+type HistoryMode = 'push' | 'replace';
+
+export const writeSelectionToQuery = (next?: EnsembleSelection, mode: HistoryMode = 'push') => {
    const params = new URLSearchParams(window.location.search);
 
    if (next?.ensembleId) params.set(ENSEMBLE_KEY, next.ensembleId);
@@ -22,10 +24,11 @@ export const writeSelectionToQuery = (next?: EnsembleSelection) => {
 
    if (next?.cycleId) params.set(CYCLE_KEY, next.cycleId);
    else params.delete(CYCLE_KEY);
-
    const qs = params.toString();
    const url = qs ? `${window.location.pathname}?${qs}` : window.location.pathname;
-   window.history.replaceState(null, '', url);
+
+   if (mode === 'push') window.history.pushState(null, '', url);
+   else window.history.replaceState(null, '', url);
 };
 
 export const useQuerySelection = () => {
@@ -37,9 +40,9 @@ export const useQuerySelection = () => {
       return () => window.removeEventListener('popstate', onPop);
    }, []);
 
-   const setAndWrite = React.useCallback((next?: EnsembleSelection) => {
+   const setAndWrite = React.useCallback((next?: EnsembleSelection, mode: HistoryMode = 'push') => {
       setSelection(next);
-      writeSelectionToQuery(next);
+      writeSelectionToQuery(next, mode);
    }, []);
 
    return { selection, setAndWrite };

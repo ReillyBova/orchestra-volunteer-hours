@@ -1,4 +1,4 @@
-export type Event = {
+export type VolunteerEvent = {
    label: string;
    date: string;
    start: string;
@@ -9,9 +9,10 @@ export type Event = {
 export type ConcertCycle = {
    id: string;
    label: string;
+   memo?: string;
    defaultDescription: string;
    cycleDate: string;
-   events: Event[];
+   events: VolunteerEvent[];
 };
 
 export type BrandTheme = {
@@ -28,6 +29,7 @@ export type EnsembleManifest = {
    name: string;
    shortName: string;
    logoUrl?: string;
+   benevityId?: string;
    theme: BrandTheme;
 };
 

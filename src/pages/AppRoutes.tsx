@@ -1,8 +1,8 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
 
 import { useEnsembleContext } from '../ensembleProvider/EnsembleContext';
-import { EnsembleSelectionPage } from './EnsembleSelectionPage';
-import { VolunteerHoursPage } from './VolunteerHoursPage';
+import { EnsembleSelectionPage } from './EnsembleSelectionPage/EnsembleSelectionPage';
+import { VolunteerHoursPage } from './VolunteerHoursPage/VolunteerHoursPage';
 
 export const AppRoutes = () => {
    const { selection } = useEnsembleContext();

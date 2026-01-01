@@ -1,6 +1,6 @@
 import { z } from 'zod';
 
-import type { BrandTheme, ConcertCycle, EnsembleManifest, Event } from './ensemble.types';
+import type { BrandTheme, ConcertCycle, EnsembleManifest, VolunteerEvent } from './ensemble.types';
 
 export const BrandThemeSchema = z.object({
    primary: z.string(),
@@ -16,6 +16,7 @@ export const EnsembleManifestSchema = z.object({
    name: z.string(),
    shortName: z.string(),
    logoUrl: z.string().optional(),
+   benevityId: z.string().optional(),
    theme: BrandThemeSchema,
 }) satisfies z.ZodType<Omit<EnsembleManifest, 'id'>>;
 
@@ -25,11 +26,12 @@ export const EventSchema = z.object({
    start: z.string(), // "19:30"
    stop: z.string(), // "21:50"
    breakTime: z.number().optional(), // minutes
-}) satisfies z.ZodType<Event>;
+}) satisfies z.ZodType<VolunteerEvent>;
 
 export const ConcertCycleSchema = z.object({
    // id comes from filename
    label: z.string(),
+   memo: z.string().optional(),
    defaultDescription: z.string(),
    cycleDate: z.string(), // ISO date string for sorting/display
    events: z.array(EventSchema),

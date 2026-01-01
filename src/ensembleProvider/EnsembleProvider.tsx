@@ -47,35 +47,30 @@ export const EnsembleProvider = ({ children }: React.PropsWithChildren) => {
 
       const ensemble = registry.byId[selection.ensembleId];
       if (!ensemble) {
-         setAndWrite(undefined);
+         setAndWrite(undefined, 'replace');
          return;
       }
 
       if (selection.cycleId && !ensemble.cycles.some((c) => c.id === selection.cycleId)) {
-         setAndWrite({ ensembleId: selection.ensembleId });
+         setAndWrite({ ensembleId: selection.ensembleId }, 'replace');
       }
    }, [registry, selection, setAndWrite]);
 
-   const selectEnsemble = React.useCallback(
-      (ensembleId: string) => {
-         setAndWrite({ ensembleId }); // clears cycle
-      },
-      [setAndWrite]
-   );
+   const selectEnsemble = React.useCallback((ensembleId: string) => setAndWrite({ ensembleId }, 'push'), [setAndWrite]);
 
    const selectCycle = React.useCallback(
       (cycleId: string) => {
-         if (!selection) return; // no-op;
-         setAndWrite({ ensembleId: selection.ensembleId, cycleId });
+         if (!selection) return;
+         setAndWrite({ ensembleId: selection.ensembleId, cycleId }, 'push');
       },
       [selection, setAndWrite]
    );
 
-   const clearEnsembleSelection = React.useCallback(() => setAndWrite(undefined), [setAndWrite]);
+   const clearEnsembleSelection = React.useCallback(() => setAndWrite(undefined, 'push'), [setAndWrite]);
 
    const clearCycleSelection = React.useCallback(() => {
       if (!selection) return;
-      setAndWrite({ ensembleId: selection.ensembleId });
+      setAndWrite({ ensembleId: selection.ensembleId }, 'push');
    }, [selection, setAndWrite]);
 
    const theme = React.useMemo(() => makeMuiTheme(selectedEnsemble?.theme), [selectedEnsemble]);

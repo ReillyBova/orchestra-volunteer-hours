@@ -12,5 +12,5 @@
    "[json]": {
       "editor.defaultFormatter": "esbenp.prettier-vscode"
    },
-   "cSpell.words": ["Nunito", "Segoe", "ntvs", "njsproj"]
+   "cSpell.words": ["Nunito", "Segoe", "ntvs", "njsproj", "benevity"]
 }
