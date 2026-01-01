@@ -8,6 +8,7 @@ import {
 } from '@mui/material';
 
 import { MarkdownText } from '../../components/MarkdownText/MarkdownText';
+import { breakIosUrlHeuristic } from './volunteerHours.utils';
 
 type Props = {
    matchedMinutes: number;
@@ -19,7 +20,6 @@ type Props = {
    onDraftChange: (next: string) => void;
 
    canCopy: boolean;
-   onCopy: () => Promise<void>;
 
    showStaleWarning: boolean;
    onRegenerate: () => void;
@@ -33,14 +33,14 @@ export const GeneratedResultCard = ({
    draftOutput,
    onDraftChange,
    canCopy,
-   onCopy,
    showStaleWarning,
    onRegenerate,
 }: Props) => {
    const [copiedOpen, setCopiedOpen] = React.useState(false);
 
    const handleCopy = async () => {
-      await onCopy();
+      const safeText = breakIosUrlHeuristic(draftOutput);
+      await navigator.clipboard.writeText(safeText);
       setCopiedOpen(true);
    };
 

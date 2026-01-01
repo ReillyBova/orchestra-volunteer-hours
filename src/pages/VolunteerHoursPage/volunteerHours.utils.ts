@@ -46,3 +46,5 @@ export const minMaxIsoDate = (isoList: string[]) => {
 
    return { min: sorted[0], max: sorted[sorted.length - 1] };
 };
+
+export const breakIosUrlHeuristic = (text: string) => text.replace(/^([^\s]*):/, '$1\u2066:');

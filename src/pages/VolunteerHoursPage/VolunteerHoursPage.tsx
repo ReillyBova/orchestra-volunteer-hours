@@ -69,9 +69,6 @@ export const VolunteerHoursPage = () => {
                            draftOutput={model.draftOutput}
                            onDraftChange={model.onDraftChange}
                            canCopy={model.canCopy}
-                           onCopy={async () => {
-                              await navigator.clipboard.writeText(model.draftOutput);
-                           }}
                            showStaleWarning={model.showStaleWarning}
                            onRegenerate={model.regenerateText}
                         />
