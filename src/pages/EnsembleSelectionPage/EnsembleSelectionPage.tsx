@@ -18,7 +18,7 @@ export const EnsembleSelectionPage = () => {
                <Typography>{`Select an ensemble to generate volunteer-hours text for your employer portal`}</Typography>
             </Stack>
             <Grid container spacing={2}>
-               {[...ensembles, ...ensembles, ...ensembles, ...ensembles, ...ensembles].map((e, index) => (
+               {ensembles.map((e, index) => (
                   <Grid key={index} size={{ xs: 12, sm: 6, md: 4, lg: 3 }}>
                      <StaggeredGrow index={index}>
                         <EnsembleCard ensemble={e} />
