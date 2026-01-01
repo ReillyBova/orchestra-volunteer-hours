@@ -9,7 +9,7 @@
       "build": "tsc -b && vite build",
       "lint": "eslint .",
       "preview": "vite preview",
-      "validate:content": "ts-node scripts/validate-content.ts"
+      "validate:content": "ts-node --esm scripts/validate-content.ts"
    },
    "dependencies": {
       "@emotion/react": "^11.14.0",
