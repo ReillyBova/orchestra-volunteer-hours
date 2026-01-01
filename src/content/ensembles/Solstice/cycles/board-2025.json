@@ -1,0 +1,92 @@
+{
+   "label": "2025 Board of Directors",
+   "memo": "Board of directors",
+   "defaultDescription": "Volunteer service organizing nonprofit community orchestra activities and programs",
+   "cycleDate": "2025-08-16",
+   "events": [
+      { "label": "January board meeting", "date": "2025-01-26", "start": "7:45pm", "stop": "8:15pm" },
+      { "label": "February board meeting", "date": "2025-02-20", "start": "7:45pm", "stop": "9:15pm" },
+      { "label": "March board meeting", "date": "2025-03-28", "start": "10:50am", "stop": "12:00pm" },
+      { "label": "March board working session", "date": "2025-03-29", "start": "12:00pm", "stop": "4:30pm" },
+      { "label": "April board meeting", "date": "2025-04-26", "start": "7:25pm", "stop": "8:05pm" },
+      { "label": "May board meeting", "date": "2025-05-18", "start": "6:20pm", "stop": "6:45pm" },
+      { "label": "June board meeting", "date": "2025-06-20", "start": "7:30pm", "stop": "8:15pm" },
+      { "label": "July board meeting", "date": "2025-07-13", "start": "6:35pm", "stop": "7:25pm" },
+      { "label": "September board meeting", "date": "2025-09-15", "start": "7:45pm", "stop": "8:45pm" },
+      { "label": "October board meeting", "date": "2025-10-23", "start": "8:00pm", "stop": "8:35pm" },
+      { "label": "November board meeting", "date": "2025-11-23", "start": "6:45pm", "stop": "7:20pm" },
+      { "label": "December board meeting", "date": "2025-12-11", "start": "7:45pm", "stop": "8:30pm" },
+      { "label": "Music bowing prep #1", "date": "2025-07-06", "start": "2:00pm", "stop": "11:00pm", "breakTime": 60 },
+      { "label": "Music bowing prep #2", "date": "2025-07-07", "start": "10:00am", "stop": "4:00pm", "breakTime": 60 },
+      { "label": "Music library prep #1", "date": "2025-07-07", "start": "5:00pm", "stop": "11:59pm", "breakTime": 30 },
+      { "label": "Music library prep #2", "date": "2025-07-09", "start": "5:00pm", "stop": "11:59pm", "breakTime": 30 },
+      {
+         "label": "Stage SETUP #1",
+         "date": "2025-08-11",
+         "start": "6:15pm",
+         "stop": "7:15pm",
+         "breakTime": 0
+      },
+      {
+         "label": "Stage BREAKDOWN",
+         "date": "2025-08-13",
+         "start": "10:00pm",
+         "stop": "10:30pm",
+         "breakTime": 0
+      },
+      {
+         "label": "Stage SETUP #2 / Concert SETUP",
+         "date": "2025-08-16",
+         "start": "5:00pm",
+         "stop": "6:45pm",
+         "breakTime": 0
+      },
+      {
+         "label": "Concert",
+         "date": "2025-08-16",
+         "start": "6:45pm",
+         "stop": "9:30pm",
+         "breakTime": 30
+      },
+      {
+         "label": "Concert BREAKDOWN",
+         "date": "2025-08-16",
+         "start": "9:30pm",
+         "stop": "10:00pm",
+         "breakTime": 0
+      },
+      { "label": "Rehearsal #1", "date": "2025-07-10", "start": "7:15pm", "stop": "9:45pm", "breakTime": 10 },
+      {
+         "label": "Rehearsal #2a (Wind/Brass/Percussion Sectional)",
+         "date": "2025-07-28",
+         "start": "7:30pm",
+         "stop": "9:45pm",
+         "breakTime": 10
+      },
+      {
+         "label": "Rehearsal #2b (String Sectional)",
+         "date": "2025-07-29",
+         "start": "7:30pm",
+         "stop": "9:45pm",
+         "breakTime": 10
+      },
+      { "label": "Rehearsal #3", "date": "2025-07-31", "start": "7:30pm", "stop": "9:50pm", "breakTime": 10 },
+      { "label": "Rehearsal #4", "date": "2025-08-05", "start": "7:30pm", "stop": "9:50pm", "breakTime": 10 },
+      { "label": "Rehearsal #5", "date": "2025-08-07", "start": "7:30pm", "stop": "9:50pm", "breakTime": 10 },
+      {
+         "label": "Rehearsal #6 (Sound Check)",
+         "date": "2025-08-11",
+         "start": "7:15pm",
+         "stop": "9:45pm",
+         "breakTime": 10
+      },
+      {
+         "label": "Rehearsal #7 (Dress)",
+         "date": "2025-08-13",
+         "start": "7:15pm",
+         "stop": "10:00pm",
+         "breakTime": 10
+      },
+      { "label": "Rehearsal #8 (Notes)", "date": "2025-08-15", "start": "7:30pm", "stop": "9:30pm", "breakTime": 10 }
+   ]
+}
