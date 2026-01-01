@@ -6,7 +6,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import { LoadingScreen } from '../components/LoadingScreen/LoadingScreen';
 import { EnsembleContext } from './EnsembleContext';
 import { useQuerySelection } from './ensembleSelection';
-import { loadEnsembles } from './loadEnsembles';
+import { loadEnsembles } from './loadEnsembles.vite';
 import { makeMuiTheme } from './theme';
 
 import type { EnsembleContextType } from './EnsembleContext';

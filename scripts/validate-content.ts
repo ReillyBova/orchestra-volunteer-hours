@@ -1,6 +1,6 @@
-import { loadEnsembles } from '../src/ensembleProvider/loadEnsembles';
+import { loadEnsemblesNode } from '../src/ensembleProvider/loadEnsembles.node';
 
-loadEnsembles()
+loadEnsemblesNode()
    .then(() => {
       console.log('Ensembles content OK');
       process.exit(0);
