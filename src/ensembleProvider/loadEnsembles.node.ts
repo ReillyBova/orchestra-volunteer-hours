@@ -1,8 +1,7 @@
 import fg from 'fast-glob';
 import { readFile } from 'node:fs/promises';
-import path from 'node:path';
 
-import { buildRegistryFromRaw } from './loadEnsembles.core';
+import { buildRegistryFromSources } from './loadEnsembles.core';
 
 import type { EnsembleRegistry } from './ensemble.types';
 // In Node/CI we don't have BASE_URL. For validation, we just produce a stable public path.
@@ -21,23 +20,9 @@ export const loadEnsemblesNode = async (): Promise<EnsembleRegistry> => {
    const manifestPaths = await fg('src/content/ensembles/*/manifest.json', { dot: false });
    const cyclePaths = await fg('src/content/ensembles/*/cycles/*.json', { dot: false });
 
-   const manifests = await Promise.all(
-      manifestPaths.map(async (p) => {
-         const ensembleDir = path.basename(path.dirname(p)); // .../EnsembleName/manifest.json
-         const raw = await readJson(p);
-         return { ensembleDir, raw };
-      })
-   );
+   const manifestSources = manifestPaths.map((p) => ({ path: p, load: async () => readJson(p) }));
 
-   const cycles = await Promise.all(
-      cyclePaths.map(async (p) => {
-         const cyclesDir = path.dirname(p); // .../EnsembleName/cycles
-         const ensembleDir = path.basename(path.dirname(cyclesDir)); // EnsembleName
-         const cycleId = path.basename(p, '.json');
-         const raw = await readJson(p);
-         return { ensembleDir, cycleId, raw };
-      })
-   );
+   const cycleSources = cyclePaths.map((p) => ({ path: p, load: async () => readJson(p) }));
 
-   return buildRegistryFromRaw({ manifests, cycles }, resolvePublicUrlNode);
+   return buildRegistryFromSources(manifestSources, cycleSources, resolvePublicUrlNode);
 };
