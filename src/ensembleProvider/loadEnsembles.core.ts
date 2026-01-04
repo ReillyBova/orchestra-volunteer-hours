@@ -16,7 +16,7 @@ type SourceLoader = { path: string; load: () => Promise<unknown> };
 type ParsedPath = { kind: 'manifest'; ensembleDir: string } | { kind: 'cycle'; ensembleDir: string; cycleId: string };
 
 const parseEnsemblePath = (path: string): ParsedPath => {
-   const manifestMatch = path.match(/[/]content[/]ensembles[/]([^/]+)[/]manifest\.json$/);
+   const manifestMatch = path.match(/[/]content[/]ensembles[/]([^/]+)[/][^/]*manifest\.json$/);
    if (manifestMatch) return { kind: 'manifest', ensembleDir: manifestMatch[1] };
 
    const cycleMatch = path.match(/[/]content[/]ensembles[/]([^/]+)[/]cycles[/]([^/]+)\.json$/);

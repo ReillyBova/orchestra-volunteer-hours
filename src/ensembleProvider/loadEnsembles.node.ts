@@ -17,7 +17,7 @@ const readJson = async (filePath: string): Promise<unknown> => {
 };
 
 export const loadEnsemblesNode = async (): Promise<EnsembleRegistry> => {
-   const manifestPaths = await fg('src/content/ensembles/*/manifest.json', { dot: false });
+   const manifestPaths = await fg('src/content/ensembles/*/*manifest.json', { dot: false });
    const cyclePaths = await fg('src/content/ensembles/*/cycles/*.json', { dot: false });
 
    const manifestSources = manifestPaths.map((p) => ({ path: p, load: async () => readJson(p) }));

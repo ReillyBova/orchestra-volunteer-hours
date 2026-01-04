@@ -1,7 +1,7 @@
 import type { EnsembleRegistry } from './ensemble.types';
 import { buildRegistryFromSources } from './loadEnsembles.core';
 
-const manifestModules = import.meta.glob('../content/ensembles/*/manifest.json');
+const manifestModules = import.meta.glob('../content/ensembles/*/*manifest.json');
 const cycleModules = import.meta.glob('../content/ensembles/*/cycles/*.json');
 
 const resolvePublicUrlVite = (maybePath?: string) => {
