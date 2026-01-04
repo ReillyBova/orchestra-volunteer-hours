@@ -15,6 +15,7 @@ export const EnsembleManifestSchema = z.object({
    // id comes from folder name
    name: z.string(),
    shortName: z.string(),
+   dateAdded: z.string(),
    logoUrl: z.string().optional(),
    benevityId: z.string().optional(),
    theme: BrandThemeSchema,

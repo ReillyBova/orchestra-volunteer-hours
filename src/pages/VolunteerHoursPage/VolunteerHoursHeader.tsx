@@ -1,6 +1,6 @@
 import { Box, Stack, Typography } from '@mui/material';
 
-export const VolunteerHoursHeaderCard = ({ logoUrl, ensembleName }: { logoUrl?: string; ensembleName?: string }) => (
+export const VolunteerHoursHeader = ({ logoUrl, ensembleName }: { logoUrl?: string; ensembleName?: string }) => (
    <Stack spacing={1}>
       <Stack direction="row" alignItems="center" flexWrap="wrap" columnGap={2} rowGap={1}>
          {logoUrl && (
@@ -8,7 +8,7 @@ export const VolunteerHoursHeaderCard = ({ logoUrl, ensembleName }: { logoUrl?: 
                component="img"
                src={logoUrl}
                alt={`${ensembleName ?? 'Ensemble'} logo`}
-               sx={{ maxHeight: 44, maxWidth: 220, objectFit: 'contain', flex: '0 0 auto' }}
+               sx={{ height: 40, maxWidth: 220, objectFit: 'contain', flex: '0 0 auto' }}
             />
          )}
          <Typography

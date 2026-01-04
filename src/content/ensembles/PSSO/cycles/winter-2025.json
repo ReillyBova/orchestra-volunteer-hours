@@ -1,0 +1,174 @@
+{
+   "label": "PSSO 2025 Winter Concert (\"Forbidden Romance\")",
+   "memo": "PSSO 2025 Winter Concert",
+   "defaultDescription": "Volunteer service supporting a community orchestra rehearsal/performance cycle",
+   "cycleDate": "2025-03-01",
+   "events": [
+      { "label": "Rehearsal #1", "date": "2025-01-06", "start": "7:15pm", "stop": "9:30pm", "breakTime": 15 },
+      {
+         "label": "Rehearsal #2: (Woodwind/Strings)",
+         "date": "2025-01-13",
+         "start": "7:15pm",
+         "stop": "9:30pm",
+         "breakTime": 15
+      },
+      { "label": "Rehearsal #3", "date": "2025-01-20", "start": "7:15pm", "stop": "9:30pm", "breakTime": 15 },
+      { "label": "Rehearsal #4", "date": "2025-01-27", "start": "7:15pm", "stop": "9:30pm", "breakTime": 15 },
+      { "label": "Rehearsal #5", "date": "2025-02-03", "start": "7:15pm", "stop": "9:30pm", "breakTime": 15 },
+      { "label": "Rehearsal #6", "date": "2025-02-10", "start": "7:15pm", "stop": "9:30pm", "breakTime": 15 },
+      { "label": "Rehearsal #7", "date": "2025-02-17", "start": "7:15pm", "stop": "9:30pm", "breakTime": 15 },
+      { "label": "Rehearsal #8 (TOWN)", "date": "2025-02-24", "start": "7:15pm", "stop": "9:30pm", "breakTime": 15 },
+      { "label": "Rehearsal #9", "date": "2025-02-28", "start": "7:15pm", "stop": "9:30pm", "breakTime": 15 },
+      { "label": "Concert", "date": "2025-03-01", "start": "6:45pm", "stop": "9:30pm", "breakTime": 15 },
+
+      {
+         "label": "Rehearsal #1 (Perc/Riser Setup)",
+         "date": "2025-01-06",
+         "start": "6:30pm",
+         "stop": "7:00pm",
+         "breakTime": 0
+      },
+      {
+         "label": "Rehearsal #1 (Perc/Riser Teardown)",
+         "date": "2025-01-06",
+         "start": "9:30pm",
+         "stop": "10:00pm",
+         "breakTime": 0
+      },
+
+      {
+         "label": "Rehearsal #2 (Riser Setup)",
+         "date": "2025-01-13",
+         "start": "6:30pm",
+         "stop": "7:00pm",
+         "breakTime": 0
+      },
+      {
+         "label": "Rehearsal #2 (Riser Teardown)",
+         "date": "2025-01-13",
+         "start": "9:30pm",
+         "stop": "10:00pm",
+         "breakTime": 0
+      },
+
+      {
+         "label": "Rehearsal #3 (Perc/Riser Setup)",
+         "date": "2025-01-20",
+         "start": "6:30pm",
+         "stop": "7:00pm",
+         "breakTime": 0
+      },
+      {
+         "label": "Rehearsal #3 (Perc/Riser Teardown)",
+         "date": "2025-01-20",
+         "start": "9:30pm",
+         "stop": "10:00pm",
+         "breakTime": 0
+      },
+
+      {
+         "label": "Rehearsal #4 (Perc/Riser Setup)",
+         "date": "2025-01-27",
+         "start": "6:30pm",
+         "stop": "7:00pm",
+         "breakTime": 0
+      },
+      {
+         "label": "Rehearsal #4 (Perc/Riser Teardown)",
+         "date": "2025-01-27",
+         "start": "9:30pm",
+         "stop": "10:00pm",
+         "breakTime": 0
+      },
+
+      {
+         "label": "Rehearsal #5 (Perc/Riser Setup)",
+         "date": "2025-02-03",
+         "start": "6:30pm",
+         "stop": "7:00pm",
+         "breakTime": 0
+      },
+      {
+         "label": "Rehearsal #5 (Perc/Riser Teardown)",
+         "date": "2025-02-03",
+         "start": "9:30pm",
+         "stop": "10:00pm",
+         "breakTime": 0
+      },
+
+      {
+         "label": "Rehearsal #6 (Perc/Riser Setup)",
+         "date": "2025-02-10",
+         "start": "6:30pm",
+         "stop": "7:00pm",
+         "breakTime": 0
+      },
+      {
+         "label": "Rehearsal #6 (Perc/Riser Teardown)",
+         "date": "2025-02-10",
+         "start": "9:30pm",
+         "stop": "10:00pm",
+         "breakTime": 0
+      },
+
+      {
+         "label": "Rehearsal #7 (Perc/Riser Setup)",
+         "date": "2025-02-17",
+         "start": "6:30pm",
+         "stop": "7:00pm",
+         "breakTime": 0
+      },
+      {
+         "label": "Rehearsal #7 (Perc/Riser Teardown)",
+         "date": "2025-02-17",
+         "start": "9:30pm",
+         "stop": "10:00pm",
+         "breakTime": 0
+      },
+
+      {
+         "label": "Rehearsal #8 (TOWN Perc/Riser Setup)",
+         "date": "2025-02-24",
+         "start": "6:15pm",
+         "stop": "7:00pm",
+         "breakTime": 0
+      },
+      {
+         "label": "Rehearsal #8 (TOWN Perc/Riser Teardown)",
+         "date": "2025-02-24",
+         "start": "9:30pm",
+         "stop": "10:15pm",
+         "breakTime": 0
+      },
+
+      {
+         "label": "Rehearsal #9 (Perc/Riser Setup)",
+         "date": "2025-02-28",
+         "start": "6:30pm",
+         "stop": "7:00pm",
+         "breakTime": 0
+      },
+      {
+         "label": "Rehearsal #9 (Perc/Riser Teardown)",
+         "date": "2025-02-28",
+         "start": "9:30pm",
+         "stop": "10:00pm",
+         "breakTime": 0
+      },
+
+      {
+         "label": "Concert (Perc/Riser Setup)",
+         "date": "2025-03-01",
+         "start": "5:45pm",
+         "stop": "6:30pm",
+         "breakTime": 0
+      },
+      {
+         "label": "Concert (Perc/Riser Teardown)",
+         "date": "2025-03-01",
+         "start": "9:30pm",
+         "stop": "10:15pm",
+         "breakTime": 0
+      }
+   ]
+}

@@ -1,7 +1,6 @@
 import { alpha, createTheme } from '@mui/material/styles';
 
 import type { BrandTheme } from './ensemble.types';
-
 const DEFAULT_BRAND: BrandTheme = {
    primary: '#FFB024',
    secondary: '#171A39',
@@ -56,6 +55,9 @@ export const makeMuiTheme = (brand = DEFAULT_BRAND) => {
          },
          MuiButton: {
             defaultProps: { disableElevation: true },
+            styleOverrides: { root: { fontWeight: 700 } },
+         },
+         MuiToggleButton: {
             styleOverrides: { root: { fontWeight: 700 } },
          },
          MuiTextField: {

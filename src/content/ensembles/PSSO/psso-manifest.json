@@ -1,0 +1,15 @@
+{
+   "name": "Puget Sound Symphony Orchestra",
+   "shortName": "PSSO",
+   "logoUrl": "psso.png",
+   "benevityId": "840-911997109",
+   "dateAdded": "2026-01-03",
+   "theme": {
+      "primary": "#6488c7",
+      "secondary": "#201a16",
+      "ink": "#1F1F1F",
+      "background": "#f0f3fa",
+      "onPrimary": "#ffffff",
+      "onSecondary": "#ffffff"
+   }
+}

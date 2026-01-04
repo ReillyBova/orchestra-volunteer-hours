@@ -28,6 +28,7 @@ export type EnsembleManifest = {
    id: string;
    name: string;
    shortName: string;
+   dateAdded: string;
    logoUrl?: string;
    benevityId?: string;
    theme: BrandTheme;

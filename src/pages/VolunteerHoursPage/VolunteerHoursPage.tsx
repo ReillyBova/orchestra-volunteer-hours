@@ -9,7 +9,7 @@ import { ParticipationCard } from './ParticipationCard';
 import { UserInfoCard } from './UserInfoCard';
 import { useVolunteerHoursModel } from './volunteerHours.model';
 import { clamp, formatDay, formatHoursMinutes, minutesBetween } from './volunteerHours.utils';
-import { VolunteerHoursHeaderCard } from './VolunteerHoursHeaderCard';
+import { VolunteerHoursHeader } from './VolunteerHoursHeader';
 
 export const VolunteerHoursPage = () => {
    const { selection, registry } = useEnsembleContext();
@@ -24,7 +24,7 @@ export const VolunteerHoursPage = () => {
       <Box sx={{ p: 4 }}>
          <Container maxWidth="md" sx={{ py: 4 }}>
             <Stack spacing={2}>
-               <VolunteerHoursHeaderCard logoUrl={ensemble?.logoUrl} ensembleName={ensemble?.name} />
+               <VolunteerHoursHeader logoUrl={ensemble?.logoUrl} ensembleName={ensemble?.name} />
                <EnsembleCycleSelector />
                {cycle && (
                   <>

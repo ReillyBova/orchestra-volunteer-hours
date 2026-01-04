@@ -86,10 +86,12 @@ export const buildRegistryFromRaw = (
       return acc;
    }, {});
 
-   const ensembles: EnsembleConfig[] = parsedManifests.map(({ ensembleDir, manifest }) => {
-      const ensembleCycles = sortCycles(cyclesByEnsembleDir[ensembleDir] ?? []);
-      return { ...manifest, cycles: ensembleCycles };
-   });
+   const ensembles: EnsembleConfig[] = parsedManifests
+      .map(({ ensembleDir, manifest }) => {
+         const ensembleCycles = sortCycles(cyclesByEnsembleDir[ensembleDir] ?? []);
+         return { ...manifest, cycles: ensembleCycles };
+      })
+      .sort((a, b) => a.dateAdded.localeCompare(b.dateAdded));
 
    const byId = Object.fromEntries(ensembles.map((e) => [e.id, e]));
    return { ensembles, byId };
