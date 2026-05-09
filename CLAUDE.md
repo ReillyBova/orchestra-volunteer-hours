@@ -79,6 +79,16 @@ Notes:
 - Events do not need to be sorted — the UI renders them in the order given. Sort them however reads best in the participation list.
 - Within one cycle you can have multiple events on the same `date` (e.g., a rehearsal plus its setup/teardown crew slots) — see `PSSO/cycles/winter-2025.json`.
 
+#### Cycle authoring conventions
+
+These aren't enforced by the schema — they're conventions you should match when editing existing files or adding new ones:
+
+- **Board cycles mirror the concurrent concert cycle's events.** Solstice publishes a "Board of Directors" cycle alongside each concert cycle and *duplicates every event from the concert cycle* (rehearsals, setups, concert, breakdown) on top of board-only events (board meetings, music library/bowing prep). This is so board members can log time monitoring rehearsals or setup as volunteer service. See `Solstice/cycles/board-2025.json` ↔ `Solstice/cycles/summer-2025.json` for the reference pair. When you add or edit a concert cycle, also update the corresponding board cycle.
+- **Event ordering inside a cycle is by category, then chronological within each category.** Board cycles use: board meetings → music prep (bowing/library) → stage/concert events → rehearsals. Concert cycles use: rehearsals → stage events → concert. Don't sort the whole array by date — the participation UI reads better grouped this way.
+- **`label` vs `memo`.** `label` is the user-facing string in the cycle picker and may include the program subtitle (e.g., `2026 Spring Concert ("American Echoes")`). `memo` is the shorter form embedded in the generated paste-text and typically omits the subtitle (e.g., `2026 Spring Concert`). When omitted, `memo` falls back to `label`.
+- **Use `11:59pm` to represent "midnight"** for sessions that run to end-of-day. The time parser doesn't handle day rollover, and existing data uses `11:59pm` for this case (see `Solstice/cycles/board-2025.json` music library prep entries).
+- **Round event times wide to 5-minute boundaries** when transcribing from raw notes (round `start` *down*, `stop` *up*). Members will adjust per-event downtime in the UI if they want a tighter credit; defaulting wide gives them the most flexibility.
+
 ### Dual loaders sharing a core
 
 Loading is split into three files because the same content must be read from both Vite (browser bundle) and Node (validation script):
