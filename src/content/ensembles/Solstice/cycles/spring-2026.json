@@ -1,0 +1,64 @@
+{
+   "label": "2026 Spring Concert",
+   "memo": "2026 Spring Concert",
+   "defaultDescription": "Volunteer service supporting a community orchestra rehearsal/performance cycle",
+   "cycleDate": "2026-03-14",
+   "events": [
+      {
+         "label": "Rehearsal #1 (Play-through)",
+         "date": "2026-02-19",
+         "start": "7:30pm",
+         "stop": "9:45pm",
+         "breakTime": 10
+      },
+      {
+         "label": "Rehearsal #2 (String Sectional)",
+         "date": "2026-03-02",
+         "start": "7:30pm",
+         "stop": "9:45pm",
+         "breakTime": 10
+      },
+      {
+         "label": "Rehearsal #3 (Full Orchestra)",
+         "date": "2026-03-05",
+         "start": "7:30pm",
+         "stop": "9:45pm",
+         "breakTime": 10
+      },
+      {
+         "label": "Rehearsal #4 (Working Dress)",
+         "date": "2026-03-12",
+         "start": "7:30pm",
+         "stop": "9:50pm",
+         "breakTime": 10
+      },
+      {
+         "label": "Concert Setup",
+         "date": "2026-03-14",
+         "start": "3:00pm",
+         "stop": "4:00pm",
+         "breakTime": 0
+      },
+      {
+         "label": "Dress Rehearsal",
+         "date": "2026-03-14",
+         "start": "4:00pm",
+         "stop": "5:50pm",
+         "breakTime": 0
+      },
+      {
+         "label": "Concert",
+         "date": "2026-03-14",
+         "start": "6:45pm",
+         "stop": "9:30pm",
+         "breakTime": 0
+      },
+      {
+         "label": "Concert Breakdown",
+         "date": "2026-03-14",
+         "start": "9:30pm",
+         "stop": "10:00pm",
+         "breakTime": 0
+      }
+   ]
+}
