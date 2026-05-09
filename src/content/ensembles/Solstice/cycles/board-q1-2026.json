@@ -9,6 +9,62 @@
       { "label": "March board meeting", "date": "2026-03-26", "start": "7:40pm", "stop": "8:25pm" },
       { "label": "Music bowing prep #1", "date": "2026-02-15", "start": "6:00pm", "stop": "9:00pm" },
       { "label": "Music bowing prep #2", "date": "2026-02-17", "start": "6:00pm", "stop": "9:00pm" },
-      { "label": "Music library prep", "date": "2026-02-18", "start": "6:00pm", "stop": "11:59pm", "breakTime": 30 }
+      { "label": "Music library prep", "date": "2026-02-18", "start": "6:00pm", "stop": "11:59pm", "breakTime": 30 },
+      {
+         "label": "Concert Setup",
+         "date": "2026-03-14",
+         "start": "3:00pm",
+         "stop": "4:00pm",
+         "breakTime": 0
+      },
+      {
+         "label": "Concert",
+         "date": "2026-03-14",
+         "start": "6:45pm",
+         "stop": "9:30pm",
+         "breakTime": 0
+      },
+      {
+         "label": "Concert Breakdown",
+         "date": "2026-03-14",
+         "start": "9:30pm",
+         "stop": "10:00pm",
+         "breakTime": 0
+      },
+      {
+         "label": "Rehearsal #1 (Play-through)",
+         "date": "2026-02-19",
+         "start": "7:30pm",
+         "stop": "9:45pm",
+         "breakTime": 10
+      },
+      {
+         "label": "Rehearsal #2 (String Sectional)",
+         "date": "2026-03-02",
+         "start": "7:30pm",
+         "stop": "9:45pm",
+         "breakTime": 10
+      },
+      {
+         "label": "Rehearsal #3 (Full Orchestra)",
+         "date": "2026-03-05",
+         "start": "7:30pm",
+         "stop": "9:45pm",
+         "breakTime": 10
+      },
+      {
+         "label": "Rehearsal #4 (Working Dress)",
+         "date": "2026-03-12",
+         "start": "7:30pm",
+         "stop": "9:50pm",
+         "breakTime": 10
+      },
+      {
+         "label": "Dress Rehearsal",
+         "date": "2026-03-14",
+         "start": "4:00pm",
+         "stop": "5:50pm",
+         "breakTime": 0
+      }
    ]
 }
