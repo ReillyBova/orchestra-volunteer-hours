@@ -1,0 +1,14 @@
+{
+   "label": "2026 Q1 Board of Directors",
+   "memo": "Board of directors",
+   "defaultDescription": "Volunteer service organizing nonprofit community orchestra activities and programs",
+   "cycleDate": "2026-03-26",
+   "events": [
+      { "label": "January board meeting", "date": "2026-01-22", "start": "8:20pm", "stop": "9:40pm" },
+      { "label": "February board meeting", "date": "2026-02-12", "start": "7:15pm", "stop": "7:40pm" },
+      { "label": "March board meeting", "date": "2026-03-26", "start": "7:40pm", "stop": "8:25pm" },
+      { "label": "Music bowing prep #1", "date": "2026-02-15", "start": "6:00pm", "stop": "9:00pm" },
+      { "label": "Music bowing prep #2", "date": "2026-02-17", "start": "6:00pm", "stop": "9:00pm" },
+      { "label": "Music library prep", "date": "2026-02-18", "start": "6:00pm", "stop": "11:59pm", "breakTime": 30 }
+   ]
+}
